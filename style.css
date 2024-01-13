@@ -1,0 +1,22 @@
+div.st-emotion-cache-6qob1r.eczjsme3 {
+    background-color: #1DB954
+}
+
+.sidebar-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #1DB954; /* Set the background color as needed */
+}
+
+.st-emotion-cache-1v0mbdj {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    width: 150px
+}
+
