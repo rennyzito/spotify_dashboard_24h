@@ -12,6 +12,7 @@ SPOTIFY_CLIENT_ID = "07c10b44ed23440a8dceff6029aba691"
 SPOTIFY_SECRET = "e11dbd6e61f042d6b425057c38c7ca71"
 REDIRECT_URL = "http://rennysplaylist.com"
 
+# st.set_page_config(layout="wide", page_title="Spotify Dashboard")
 
 # Function to check if the local data needs an update
 def needs_update(local_file="spotify_data.xlsx", update_interval_hours=24):
@@ -205,8 +206,6 @@ def create_dashboard():
         return donut_chart
 
     ###### Montagem do Dashboard daqui para baixo
-    st.set_page_config(layout="wide", page_title="Spotify Dashboard")
-
     with open("style.css") as f:
         st.markdown(f"<style>{f.read()}<style/>", unsafe_allow_html=True)
 
@@ -256,10 +255,6 @@ def create_dashboard():
     with st.container():
         st.write(df_filtered)
 
-
-
-
-
-
+create_dashboard()
 
 
